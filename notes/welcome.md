@@ -2,7 +2,7 @@
 title: Welcome
 type: note
 tags: [meta, getting-started]
-created: 2026-05-28
+created: {{today}}
 ---
 
 # Welcome to your Second Brain
