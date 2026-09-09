@@ -28,24 +28,30 @@ version that matches the app.
 
 ## What's inside
 
+A short tour, one note per feature, each doing the thing it describes, and a
+three-row collection for the tour to show. Delete `notes/tour/` and
+`collections/books/` when you know your way round.
+
 ```
 my-vault/
-├── notes/                 ← Your notes. Organise into folders freely.
-│   ├── welcome.md         ← Start here.
-│   ├── ideas/second-brain.md
-│   ├── journal/           ← Daily notes (Today uses templates/daily.md).
+├── notes/
+│   ├── welcome.md            ← Start here: the tour as a checklist.
+│   ├── tour/                 ← Writing, linking, daily notes, collections,
+│   │                            templates and packs, agents and the CLI, sync and looks.
+│   ├── ideas/second-brain.md ← A note to link to.
+│   ├── journal/              ← Daily notes (Today uses templates/daily.md).
 │   └── work/
-├── templates/             ← Note templates: {{date}} {{time}} {{title}} {{uuid}}.
-│   ├── daily.md           ← What Today opens.
-│   └── note.md
-├── .gitignore             ← Ignores .brain/, the app's rebuildable index.
-├── VAULT.md               ← The conventions, for people.
-└── AGENTS.md              ← The conventions, for agents (CLI, MCP, rules).
+├── collections/books/        ← A database: _index.md holds the views, rows are notes.
+├── templates/                ← Note templates: {{date}} {{time}} {{title}} {{uuid}}.
+│   ├── daily.md  meeting.md  note.md
+├── .cortex/schemas/books.yaml ← Typed properties for the collection.
+├── .gitignore                ← Ignores .brain/, the app's rebuildable index.
+├── VAULT.md                  ← The conventions, for people.
+└── AGENTS.md                 ← The conventions, for agents (CLI, MCP, rules).
 ```
 
-Collections (databases), typed schemas and template packs are added as you
-go — from the app's template marketplace or `cortex packs install <id>` —
-and land under `collections/` and `.cortex/`. See `VAULT.md`.
+More collections, schemas and templates arrive as you install packs from
+the marketplace (`cortex packs install <id>`).
 
 ## Make your own template
 
