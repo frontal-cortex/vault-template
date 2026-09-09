@@ -2,7 +2,7 @@
 title: Second Brain
 type: note
 tags: [ideas, meta]
-created: 2026-05-28
+created: {{today}}
 ---
 
 # Second Brain
